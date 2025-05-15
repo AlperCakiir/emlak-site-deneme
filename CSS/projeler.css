@@ -1,121 +1,167 @@
-body {
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeler</title>
+    <style>
+      
+    body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
-header {
-    background-color: #f3ebeb;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
 
-.headerMenu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        header {
+            background-color: #f3ebeb;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .headerMenu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: start;
+            gap: 10px;
+            margin-top: 2%;
+        }
+        .logo img {
+            width: 50px; 
+            height: 50px;
+            object-fit: cover; 
+            border-radius: 8px; 
+        }
+        .logo h1 {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #333;
+        }
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-menu li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        .nav-menu li a:hover {
+            color: #0078ff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .projects {
+            margin-bottom: 20px;
+        }
+        .projects h2 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #00509E;
+        }
+        .projects p {
+            font-size: 1.2em;
+            text-align: center;
+            margin: 10px 0 20px;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-card h3 {
+            font-size: 1.5em;
+            color: #003F7D;
+            margin: 10px;
+        }
+        .project-card p {
+            font-size: 1em;
+            margin: 10px;
+        }
+        footer {
+            background-color: #f3ebeb;
+            color: #000000;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headerMenu">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <h1>Çakır Emlak</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="projeler.html">Projeler</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </header>
 
+    <div class="container">
+        <section class="projects">
+            <h2>Projelerimiz</h2>
+            <p>2023-2025 yılları “Karma Kullanım Merkezi” odaklı konut-ofis ticari projelerden bazı projelerimiz:</p>
 
-.logo {
-    display: flex;
-    align-items: start;
-    gap: 10px;
-    margin-top: 2%;
-}
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="img/villa.jpg" alt="Modern Villa">
+                    <h3>Modern Villa Kompleksi</h3>
+                    <p>Şehirden uzak, doğa ile iç içe modern bir yaşam alanı sunuyoruz.</p>
+                </div>
+                <div class="project-card">
+                    <img src="img/daire.jpg" alt="Şehir Merkezi Daire">
+                    <h3>Şehir Merkezinde Lüks Daireler</h3>
+                    <p>Konforlu ve lüks yaşam için eşsiz bir yaşam alanı.</p>
+                </div>
+                <div class="project-card">
+                    <img src="img/kule.jpg" alt="Ticaret Merkezi">
+                    <h3>Karma Kullanım Ticaret ve Yaşam Merkezi</h3>
+                    <p>2024-2025 Karma Kullanım Merkezi odaklı projemiz!</p>
+                </div>
+            </div>
+        </section>
+    </div>
 
-.logo img {
-    width: 50px; 
-    height: 50px;
-    object-fit: cover; 
-    border-radius: 8px; 
-}
-
-.logo h1 {
-    font-size: 1.5rem;
-    margin: 0;
-    color: #333;
-}
-
-
-.nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-menu li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.nav-menu li a:hover {
-    color: #0078ff;
-}
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.projects {
-    margin-bottom: 20px;
-}
-.projects h2 {
-    font-size: 2.5em;
-    text-align: center;
-    color: #00509E;
-}
-.projects p {
-    font-size: 1.2em;
-    text-align: center;
-    margin: 10px 0 20px;
-}
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-.project-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-.project-card:hover {
-    transform: scale(1.05);
-}
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.project-card h3 {
-    font-size: 1.5em;
-    color: #003F7D;
-    margin: 10px;
-}
-.project-card p {
-    font-size: 1em;
-    margin: 10px;
-}
-footer {
-    background-color: #f3ebeb;
-    color: #000000;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
+    <footer>
+      
+    </footer>
+</body>
+</html>
