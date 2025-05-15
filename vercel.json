@@ -1,9 +1,10 @@
 {
-     "version": 2, 
- "builds": [
+
+  "rewrites": [
     {
-        "src": "Çakır Emlak.html",
-        "use": "@vercel/static"
+      "source": "/",
+      "destination": "/Çakır Emlak.html"
     }
- ]
+  ]
+
 }
