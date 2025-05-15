@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çakır Emlak</title>
+    <link rel="stylesheet" href="CSS/Ana Sayfa.css">
+    <link rel="icon" type="image/png" href="Logo/emlakLogo.png">
+
+    
+</head>
+<body>
+    <header>
+        <div class="headerMenu">
+            <div class="logo">
+                <a href="Çakır Emlak.html">
+                    <img src="Logo/emlakLogo2.png" alt="Çakır Emlak Logo" >
+                </a>
+                <a href ="Çakır Emlak.html" style="text-decoration: none;">
+                    <h1 >Çakır Emlak</h1>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="Çakır Emlak.html">Ana Sayfa</a></li>
+                    <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                    <li><a href="projeler.html">Projeler</a></li>
+                    <li><a href="iletişim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Hayalinizdeki Evi Bulun</h2>
+            <p>En kaliteli projelerle hayallerinizi gerçeğe dönüştürüyoruz.</p>
+        </div>
+    </section>
+
+    <section class="properties">
+        <div class="container">
+            <h2>Satılık / Kiralık Evler</h2>
+            <div class="property-grid">
+
+                <div class="property-card">
+                    <img src="Fotoğraflar/1. ev.jpg" alt="Ev 1" onclick="openModal(1)">
+                    <h3>3+1 Modern Villa</h3>
+                    <p>₺25.500.000</p>
+                    <div class="property-images">
+                        <img src="Fotoğraflar/1. ev.jpg" alt="Ev 1 Fotoğraf 1">   
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="Fotoğraflar/2. ev.jpg" alt="Ev 2" onclick="openModal(2)">
+                    <h3>2+1 Şehir Dairesi</h3>
+                    <p>₺18.200.000</p>
+                    <div class="property-images">
+                        <img src="Fotoğraflar/2. ev.jpg" alt="Ev 2 Fotoğraf 1">
+
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="Fotoğraflar/3. ev.jpg" alt="Ev 3" onclick="openModal(3)">
+                    <h3>4+1 Lüks Daire</h3>
+                    <p>₺32.750.000</p>
+                    <div class="property-images">
+                        <img src="Fotoğraflar/3. ev.jpg" alt="Ev 3 Fotoğraf 1">
+                
+                    </div>
+                </div>
+                <div class="property-card">
+                <img src="Fotoğraflar/4. ev.webp" alt="Ev 4" onclick="openModal(4)">
+                <h3>Lüks Villa</h3>
+                <p>₺22.000.000</p>
+                <div class="property-images">
+                    <img src="Fotoğraflar/4. ev.webp" alt="Ev 4 Fotoğraf 1" >
+                </div>
+                </div>
+                <div class="property-card">
+                    <img src="Fotoğraflar/5. ev.jpg" alt="Ev 5"onclick="openModal(5)">
+                    <h3>Lüks Villa</h3>
+                    <p>₺22.000.000</p>
+                    <div class="property-images">
+                        <img src="Fotoğraflar/5. ev.jpg" alt="Ev 5 Fotoğraf 1" >
+                    </div>
+                    </div>
+                    <div class="property-card">
+                        <img src="Fotoğraflar/10..webp" alt="Ev 4" onclick="openModal(6)">
+                        <h3>Lüks Villa</h3>
+                        <p>₺22.000.000</p>
+                        <div class="property-images">
+                            <img src="Fotoğraflar/10..webp" alt="Ev 4 Fotoğraf 1">
+                            
+                        </div>
+                        </div>
+                        <div class="property-card">
+                            <img src="Fotoğraflar/15..webp" alt="Ev 4" onclick="openModal(7)">
+                            <h3>Lüks Villa</h3>
+                            <p>₺22.000.000</p>
+                            <div class="property-images">
+                                <img src="Fotoğraflar/15..webp" alt="Ev 4 Fotoğraf 1">
+                            </div>
+                            </div>
+                            <div class="property-card">
+                                <img src="Fotoğraflar/13..webp" alt="Ev 4" onclick="openModal(8)">
+                                <h3>Lüks Villa</h3>
+                                <p>₺22.000.000</p>
+                                <div class="property-images">
+                                    <img src="Fotoğraflar/13..webp" alt="Ev 4 Fotoğraf 1">
+                                </div>
+                                </div>
+         
+            </div>
+        </div>
+    </section>
+
+<div id="propertyModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+       
+        <div class="slider2">
+            <img style="margin-top: 3%;" id="modalImage" src="" alt="Ev Fotoğrafı">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+    
+    <section class="property-gallery">
+        <div class="container">
+            <h2>3+1 Modern Villa - Fotoğraf Galerisi</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img src="Fotoğraflar/2. ev.jpg" alt="Ev Fotoğrafı 1">
+                    <img src="Fotoğraflar/3. ev.jpg" alt="Ev Fotoğrafı 2">
+                    <img src="Fotoğraflar/4. ev.webp" alt="Ev Fotoğrafı 3">
+                </div>
+             
+                <button class="prev1">&#10094;</button>
+                <button class="next1">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <div class="container">
+            <p style="font-size: 13px; color: #555;">Bu internet sitesi yalnızca eğitim ve öğrenme amaçlı hazırlanmıştır. Ticari bir amaç taşımamaktadır. İçerikler, örnek teşkil etmesi için kullanılmıştır.</p>
+    </footer>
+
+    <script>
+        const slides = document.querySelector('.slides');
+        const prevBtn = document.querySelector('.prev1');
+        const nextBtn = document.querySelector('.next1');
+        let currentIndex = 0;
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.children.length;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.children.length) % slides.children.length;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        });
+    
+    
+
+
+
+
+
+        const propertyImages = {
+    1: ['Fotoğraflar/1. ev.jpg', 'Modern Villa Fotoğraf/5...png', 'Modern Villa Fotoğraf/2...jpg'],
+    2: ['Fotoğraflar/2. ev.jpg', 'Modern Villa Fotoğraf/11...png', 'Modern Villa Fotoğraf/28..jpg'],
+    3: ['Fotoğraflar/3. ev.jpg', 'Modern Villa Fotoğraf/29..jpg', 'Modern Villa Fotoğraf/28..jpg', 'Modern Villa Fotoğraf/26..jpg'],
+    4: ["Fotoğraflar/4. ev.webp", 'Modern Villa Fotoğraf/23..jpg', 'Modern Villa Fotoğraf/34..jpg'],
+    5: ['Fotoğraflar/5. ev.jpg',  'Modern Villa Fotoğraf/28..jpg', 'Modern Villa Fotoğraf/30..jpg'],
+    6: ['Fotoğraflar/10..webp', 'Modern Villa Fotoğraf/26..jpg', 'Modern Villa Fotoğraf/36..jpg'],
+    7: ['Fotoğraflar/15..webp', 'Modern Villa Fotoğraf/37..jpg', 'Modern Villa Fotoğraf/38..jpg'],
+    8: ['Fotoğraflar/13..webp', 'Modern Villa Fotoğraf/30..jpg', 'Modern Villa Fotoğraf/31..jpg'],
+};
+
+let currentProperty = 0;
+let currentSlide = 0;
+
+
+function openModal(propertyId) {
+    currentProperty = propertyId;
+    currentSlide = 0;
+    document.getElementById('modalImage').src = propertyImages[propertyId][currentSlide];
+    document.getElementById('propertyModal').style.display = 'block';
+}
+
+
+function closeModal() {
+    document.getElementById('propertyModal').style.display = 'none';
+}
+
+
+function changeSlide(direction) {
+    currentSlide += direction;
+
+    if (currentSlide < 0) {
+        currentSlide = propertyImages[currentProperty].length - 1;
+    } else if (currentSlide >= propertyImages[currentProperty].length) {
+        currentSlide = 0;
+    }
+
+    document.getElementById('modalImage').src = propertyImages[currentProperty][currentSlide];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
